@@ -24,6 +24,9 @@
     "target": "es5",
     "downlevelIteration": true,
     "lib": ["dom", "dom.iterable", "esnext"],
-    "strict": true
+    "strict": true,
+    "paths": {
+      "@tabassa/islamic-date": ["./packages/islamic-date/src"]
+    }
   }
 }
