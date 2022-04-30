@@ -1,0 +1,10 @@
+{
+  "name": "@tabassa/islamic-date",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "license": "MIT"
+}
