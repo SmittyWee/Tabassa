@@ -1,32 +1,20 @@
-export interface ConfigDataSchema {
-  DATETIME_NAME: {
-    DAY_NAME        : string[];
-    MONTH_NAME      : string[];
-    HIJR_DAY_NAME   : string[];
-    HIJR_MONTH_NAME : string[];
-    JAVA_DAY_NAME   : string[];
-  }
+export interface HijriyahDate {
+  /** Set the day as a number (1-30) */
+  // setDate(t: number): number;
+  /** Set the year (optionally month and day) */
+  // setFullYear(t: number): number;
+  /** Set the month (0-11) */
+  // setMonth(t: number): number;
+  /** Set the time (milliseconds since Shawwal 23, 1389 H) */
+  // setTime(t: number): number;
+  
+  getDate(): number;
+  getMonth(): number;
+  getFullYear(): number;
 }
 
-export interface HijrDateSchema {
-  date: number;
-  month: number;
-  year: number;
-  dateOfWeek: number;
-  dayName: string;
-  monthName: string;
-}
-
-export interface GregorianDateSchema {
-  date: number;
-  month: number;
-  year: number;
-  dateOfWeek: number;
-  dayName: string;
-  monthName: string;
-}
-
-export interface JavaDateSchema {
-  dayJava: number;
-  dayJavaName: string;
+export interface HijriyahDateConstructor {
+  new(): HijriyahDate;
+  new(value: number | string): HijriyahDate;
+  new(year: number, month: number, date?: number): HijriyahDate;
 }

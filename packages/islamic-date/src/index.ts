@@ -1,3 +1,3 @@
-export * from "./date";
-export * from "./types";
-export * from "./config";
+export * from "./hijr";
+export * as converter from "./utils";
+export * as types from "./types";
